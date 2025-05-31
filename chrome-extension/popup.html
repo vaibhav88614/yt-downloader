@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Video</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 250px; }
+    select, input, button { width: 100%; margin-top: 10px; padding: 8px; }
+    #status { margin-top: 10px; font-size: 0.9em; color: green; }
+  </style>
+</head>
+<body>
+  <h3>Video Downloader</h3>
+  <input type="text" id="videoUrl" placeholder="Paste video URL here" />
+  <select id="quality">
+    <option value="best">Best</option>
+    <option value="1080p">1080p</option>
+    <option value="720p">720p</option>
+    <option value="360p">360p</option>
+    <option value="worst">Lowest</option>
+  </select>
+  <button id="downloadBtn">Download</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
