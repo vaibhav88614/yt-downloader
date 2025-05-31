@@ -10,7 +10,7 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
 
   status.textContent = "Downloading...";
 
-  fetch("https://your-app-name.onrender.com/download", {
+  fetch("https://yt-downloader-5j1r.onrender.com", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ url, quality })
